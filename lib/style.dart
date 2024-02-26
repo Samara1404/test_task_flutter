@@ -8,5 +8,7 @@ class AppTextStyle{
    TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black);
    
     static const TextStyle style3 =
+   TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color.fromARGB(255, 133, 131, 131));
+      static const TextStyle style4 =
    TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.white);
 }
