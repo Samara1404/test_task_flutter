@@ -82,7 +82,9 @@ class _Page2State extends State<Page2> {
                   ),
                   const SizedBox(width: 10),
                   const Icon(
-                    Icons.circle_rounded,
+                    
+                    Icons. circle_rounded,
+                    
                     size: 56,
                     color: Color.fromARGB(255, 240, 240, 240),
                   ), // TODO:
@@ -123,8 +125,11 @@ class _Page2State extends State<Page2> {
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {},
-                child: const Text('+ материал',
-                    selectionColor: Colors.blue, style: AppTextStyle.style3),
+                child: const Text('+ материал', style: AppTextStyle.style4 ,
+                    ),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.blue,
+                     padding: EdgeInsetsDirectional.symmetric(vertical: 20, horizontal:70,
+                      ) ),
               ),
               const SizedBox(height: 8),
               const Padding(
@@ -190,10 +195,13 @@ class _Page2State extends State<Page2> {
                 ],
               ),
               const SizedBox(height: 8),
-              ElevatedButton(
+               ElevatedButton(
                 onPressed: () {},
-                child: const Text('+ фурнитура',
-                    selectionColor: Colors.blue, style: AppTextStyle.style3),
+                child: const Text('+ фурнитура', style: AppTextStyle.style4 ,
+                    ),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.blue,
+                     padding: EdgeInsetsDirectional.symmetric(vertical: 20, horizontal:70,
+                      ) ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(

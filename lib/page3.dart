@@ -175,10 +175,13 @@ class _Page3State extends State<Page3> {
                 ],
               ),
               const SizedBox(height: 8),
-              ElevatedButton(
+                 ElevatedButton(
                 onPressed: () {},
-                child: const Text('+ материал',
-                    selectionColor: Colors.blue, style: AppTextStyle.style3),
+                child: const Text('+ материал', style: AppTextStyle.style4 ,
+                    ),
+                    style: ElevatedButton.styleFrom(backgroundColor: Color.fromARGB(255, 240, 240, 240),
+                     padding: EdgeInsetsDirectional.symmetric(vertical: 20, horizontal:70,
+                      ) ),
               ),
               const SizedBox(height: 8),
               const Padding(
@@ -190,17 +193,25 @@ class _Page3State extends State<Page3> {
               ),
               Row(
                 children: [
-                  SizedBox(
+                  Container(
                     width: 390,
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                          filled: true,
-                          fillColor: const Color.fromARGB(255, 240, 240, 240),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15))),
+                  
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: FractionallySizedBox(
+                        widthFactor: 0.5,
+                        child: TextFormField(
+                          decoration: InputDecoration(
+                              filled: true,
+                              fillColor: const Color.fromARGB(255, 240, 240, 240),
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15))),
+                        ),
+                      ),
                     ),
                   ),
                   const SizedBox(width: 10),
+
                   const Icon(
                     Icons.circle_rounded,
                     size: 56,
@@ -239,10 +250,13 @@ class _Page3State extends State<Page3> {
                 ],
               ),
               const SizedBox(height: 8),
-              ElevatedButton(
+               ElevatedButton(
                 onPressed: () {},
-                child: const Text('+ фурнитура',
-                    selectionColor: Colors.blue, style: AppTextStyle.style3),
+                child: const Text('+ фурнитура', style: AppTextStyle.style4 ,
+                    ),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.blue,
+                     padding: EdgeInsetsDirectional.symmetric(vertical: 20, horizontal:70,
+                      ) ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(

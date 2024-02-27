@@ -35,11 +35,16 @@ class _HomePageState extends State<HomePage> {
                   )),
               const SizedBox(height: 20),
               TextFormField(
+                
                 decoration: InputDecoration(
+                
                   filled: true,
                   fillColor: const Color.fromARGB(255, 240, 240, 240),
                   border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15)),
+                 
+                      borderRadius: BorderRadius.circular(15),
+                      
+                      ),
                   hintText: 'Номер артикула *',
                 ),
               ),
@@ -112,9 +117,13 @@ class _HomePageState extends State<HomePage> {
               ),
               const SizedBox(height: 8),
               const SizedBox(height: 8),
-              ElevatedButton(
+               ElevatedButton(
                 onPressed: () {},
-                child: const Text('+ материал', style: AppTextStyle.style3),
+                child: const Text('+ материал', style: AppTextStyle.style4 ,
+                    ),
+                    style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+                     padding: const EdgeInsetsDirectional.symmetric(vertical: 20, horizontal:70,
+                      ) ),
               ),
               const SizedBox(height: 8),
               const Padding(
@@ -179,7 +188,11 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {},
-                child: const Text('+ фурнитура', style: AppTextStyle.style3),
+                child: const Text('+ фурнитура', style: AppTextStyle.style4 ,
+                    ),
+                    style: ElevatedButton.styleFrom(backgroundColor: Color.fromARGB(255, 240, 240, 240),
+                     padding: const EdgeInsetsDirectional.symmetric(vertical: 20, horizontal:70,
+                      ) ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
